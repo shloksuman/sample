@@ -1,0 +1,4 @@
+Enter your number :
+ 
+ Enter your number :
+ a *b  :7248
