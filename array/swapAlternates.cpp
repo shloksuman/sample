@@ -18,27 +18,22 @@ void printarray(int arr[], int size) {
     }  
 }
 
-void util(int arr[],int size) {
-    arr[0] = 23;
-    cout << "Printing in util function : " << endl;
-    printarray(arr, 3) ;
+void swapAlternate( int arr[] , int size) {
+    for(int i=0; i <= size/2 ; i = i+2 ) {
+        swap(arr[i], arr[i+1]) ;
+    }
 }
 
-
 int main(){
-
-    int arr[] = {3, 6, 9} ;
-    util(arr , 3) ;
-    cout << "Printing in main function : " << endl;
-    printarray(arr,3);
-
-   /* int arr[100] ;
+    int arr[100] ;
     cout << "Enter the size of the array : " ;
     int n;
     cin >> n;
-    //CREATE ARRAY
-    createArr(arr, n ) ;
-    //PRINTING THE ARRAY
-    printarray(arr , n ); */
-    return 0;   
+    createArr(arr, n) ;
+    swapAlternate(arr,n) ;
+    cout << "After SWAPPING!!!" << endl;
+    printarray(arr,n) ;
+   
+    return 0;
+
 }

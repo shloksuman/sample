@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool search(int arr[] , int size, int x){
+bool search(int arr[] , int size, int x){        //🆃🅸🅼🅴 🅲🅾🅼🅿🅻🅴🆇🅸🆃🆈 🅾(🅽)
     for(int i=0; i< size; i++){
         if(arr[i]==x){
             return 1;
@@ -24,6 +24,9 @@ int main()
     {
         cin >> arr[i]; // TAKEN ALL THE INPUTS
     }
+    
+    //PRINTING THE ARRAY
+
     cout << "\nThe elements in the array are : ";
     for (int i = 0; i < n; i++)
     {
