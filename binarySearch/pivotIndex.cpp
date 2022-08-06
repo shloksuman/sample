@@ -17,11 +17,23 @@ void printarray(int arr[], int size) {
     }  
 }
 
-void rotateArray(int arr[], int n){
-    while(n-2>=0){                      //BEWARE WHILE MAKING THE CONDITION... MAY LEAD TO SEGMENTATION FAULT IF SPECIFIED WRONG
-        swap(arr[n-2], arr[n-1]);       //END SE SWAP KARNA HAI BAS AUR 
-        n-- ;                           //N-- DECREMENT KARTE REHNAA HAI
-    }
+int pivotindex(int arr[] , int size ){
+        int n = size ; 
+        //using brute force
+        int ls = 0 ; int rs = 0 ;       //TIME COMPLEXITY IS O(N^2)
+        
+        for(int i =0 ; i< n ; i++){
+            rs = 0 ;
+            for(int j= n-1; j>i ; j--){
+                rs = arr[j] + rs ;
+            }
+            if(ls==rs){
+                return i ;
+            }
+            ls = ls + arr[i] ;
+        }
+        
+        return -1 ;
 }
 
 int main(){
@@ -31,9 +43,7 @@ int main(){
     int size;
     cin>>size;
     createArr(arr,size);
-    cout << "After rotating the array by one position!!!!" << endl;
-    rotateArray(arr,size);
-    printarray(arr,size);
+    cout << "The pivot Index is : " << pivotindex(arr , size) << endl ;
 
 return 0;
 }

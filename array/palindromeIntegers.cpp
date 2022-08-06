@@ -44,22 +44,25 @@ bool palindrome(int arr[], int size) {
         while(j--){
             arr[i]=x%10;
             x=x/10;
-            i++;
+            ++i;
         }
+        i=i-1;
         int l=0;
         while(l<=i){
             if(arr[l]==arr[i]){
                 l++;
                 i--;
             }
-            else { return false;}
+            else { 
+                return false;
+            }
         }
         return true;
     }
 
 int main(){
     // int arr[100];
-    // cout << "Enter the size of array : " ;
+    // cout << "Enter the size of array : " ;       //FOR PALINDROME ARRAY
     // int n;
     // cin>>n;
     // createArr(arr,n);
@@ -67,7 +70,7 @@ int main(){
     //     cout << "It's a PALINDROME!!!" << endl;
     // }
     // else { cout << "NOT A PALINDROME!!!" << endl; }
-    cout << "enter the number : " ;
+    cout << "enter the number : " ;                 //FOR PALINDROME INTEGER
     int num;
     cin>>num;
     if(isPalindrome(num)){

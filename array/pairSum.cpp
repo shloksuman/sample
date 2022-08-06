@@ -1,4 +1,5 @@
 #include<iostream>
+#include<bits/stdc++.h>
 #include<algorithm>
 using namespace std;
 
@@ -18,8 +19,8 @@ void printarray(int arr[], int size) {
     }  
 }
 
-void pairsum(int arr[], int size,int target){
-    sort(arr, arr+size);
+void pairsum(int arr[], int size,int target){   //SORT A VECTOR  BELOW
+    sort(arr, arr+size);                        //sort(arr.begin(), arr.end());
     int i=0, j=size-1;
     cout << "The pair ,if possible are : " ;
     while(i<=j){

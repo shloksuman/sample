@@ -1,7 +1,10 @@
 #include<iostream>
 using namespace std;
 
-int factorial(int n){
+#define ll long long
+
+
+ll factorial(ll n){
     //base case
     if(n==1){
         return 1 ;
@@ -13,7 +16,7 @@ int factorial(int n){
 }
 
 int main(){
-    int n;
+    ll n;
     cout << "Enter the value of n : " ;
     cin>> n ;
     cout << "The factorial is : " << factorial(n) << endl;

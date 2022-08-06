@@ -2,6 +2,7 @@
 using namespace std;
 
 int gcdd(int a, int b){
+    //handling base cases
     if(a==0)
     return b;
     if(b==0)

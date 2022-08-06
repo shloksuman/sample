@@ -1,0 +1,1 @@
+{"name":"Local: threes","url":"c:\\Users\\SHLOK\\OneDrive\\Desktop\\C++\\array\\2darray\\threes.cpp","tests":[{"id":1658939909380,"input":"3\n5 5 5\n2 3 4\n2 2 4","output":"YES\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\SHLOK\\OneDrive\\Desktop\\C++\\array\\2darray\\threes.cpp","group":"local","local":true}

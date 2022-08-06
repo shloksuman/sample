@@ -19,7 +19,7 @@ void printarray(int arr[], int size) {
 }
 
 void swapAlternate( int arr[] , int size) {
-    for(int i=0; i <= size/2 ; i = i+2 ) {
+    for(int i=0; i <= (size/2)+1 ; i = i+2 ) {
         swap(arr[i], arr[i+1]) ;
     }
 }

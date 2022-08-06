@@ -2,11 +2,15 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\Java"
 		}
 	],
 	"settings": {
 		"files.associations": {
-			"iostream": "cpp"
+			"iostream": "cpp",
+			"vector": "cpp"
 		}
 	}
 }
